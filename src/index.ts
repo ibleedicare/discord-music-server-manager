@@ -6,4 +6,5 @@ const commands: Command[] = [
         description: 'Replies with Pong!',
     },
 ];
+
 deployCommands(commands);
