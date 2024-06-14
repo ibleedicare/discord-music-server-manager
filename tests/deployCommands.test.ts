@@ -12,7 +12,7 @@ mock.module("discord.js", () => {
     return {
         REST: mockRest.mockImplementation(() => {
             return {
-                setToken: mockSetToken,
+                setToken: mockSetToken.mockReturnThis(),
                 put: mockPut
             }
         }),
